@@ -80,7 +80,14 @@
 
 @layer utilities {
   .hero-bg {
-    background-image: linear-gradient(rgba(21, 128, 61, 0.7), rgba(22, 101, 52, 0.7)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080');
+    background: linear-gradient(135deg, 
+      hsl(340, 82%, 52%) 0%,     /* Pink primary */
+      hsl(340, 75%, 45%) 20%,    /* Deeper pink */
+      hsl(45, 95%, 65%) 35%,     /* Yellow accent */
+      hsl(340, 70%, 40%) 60%,    /* Pink again */
+      hsl(45, 90%, 60%) 80%,     /* Another yellow */
+      hsl(340, 60%, 30%) 100%    /* Darkest pink */
+    );
     background-size: cover;
     background-position: center;
   }

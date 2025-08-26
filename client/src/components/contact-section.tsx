@@ -1,6 +1,6 @@
 import { Phone, MessageCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logoImage from "@assets/ai_repair_20250823211605583_1755958920038.png";
+import logoImage from "@assets/logo pesona_1756221891563.png";
 
 export default function ContactSection() {
   const contactMethods = [

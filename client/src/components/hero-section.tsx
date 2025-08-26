@@ -1,5 +1,5 @@
 import { Mountain } from "lucide-react";
-import logoImage from "@assets/ai_repair_20250823211605583_1755958920038.png";
+import logoImage from "@assets/logo pesona_1756221891563.png";
 
 export default function HeroSection() {
   return (
