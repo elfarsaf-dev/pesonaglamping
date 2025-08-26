@@ -15,13 +15,13 @@ export default function FloatingToggle({ currentType, onToggle }: FloatingToggle
         className="bg-primary-600 hover:bg-primary-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110"
         data-testid="button-toggle-type"
       >
-        {currentType === "villa" ? (
-          <Home className="text-xl h-6 w-6" />
-        ) : (
+        {currentType === "glamping" ? (
           <Tent className="text-xl h-6 w-6" />
+        ) : (
+          <Home className="text-xl h-6 w-6" />
         )}
         <span className="ml-2" data-testid="text-toggle-type">
-          {currentType === "villa" ? "Villa" : "Glamping"}
+          {currentType === "glamping" ? "Glamping" : "Villa"}
         </span>
       </Button>
     </div>

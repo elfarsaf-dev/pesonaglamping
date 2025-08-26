@@ -7,23 +7,23 @@ export default function ContactSection() {
     {
       icon: Phone,
       title: "Telepon",
-      details: ["+62 812-2637-4041"],
+      details: ["+62 822-4181-9991"],
       action: null
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      details: ["+62 812-2637-4041"],
+      details: ["+62 822-4181-9991"],
       action: {
         text: "Chat Sekarang",
-        onClick: () => window.open("https://wa.me/6281226374041", "_blank"),
+        onClick: () => window.open("https://wa.me/6282241819991", "_blank"),
         className: "bg-green-600 hover:bg-green-700"
       }
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@bosvillatawangmangu.com", "booking@bosvillatawangmangu.com"],
+      details: ["info@pesonaglamping.com", "booking@pesonaglamping.com"],
       action: null
     }
   ];
@@ -72,12 +72,12 @@ export default function ContactSection() {
             <div className="w-20 h-20 bg-transparent flex items-center justify-center mx-auto mb-4">
               <img 
                 src={logoImage} 
-                alt="BOS VILLA TAWANGMANGU Logo" 
+                alt="PESONA GLAMPING TAWANGMANGU Logo" 
                 className="w-full h-full object-contain"
               />
             </div>
-            <h3 className="text-2xl font-bold text-primary-400 mb-4">BOS VILLA TAWANGMANGU</h3>
-            <p className="text-gray-400 mb-4">Pengalaman menginap terbaik di kaki Gunung Lawu</p>
+            <h3 className="text-2xl font-bold text-primary-400 mb-4">PESONA GLAMPING TAWANGMANGU</h3>
+            <p className="text-gray-400 mb-4">Pengalaman glamping & villa terbaik di kaki Gunung Lawu</p>
             <div className="flex justify-center space-x-6 mb-6">
               <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors" data-testid="link-facebook">
                 <span className="text-xl">📘</span>
@@ -92,7 +92,7 @@ export default function ContactSection() {
             <p className="text-gray-500 text-center" data-testid="text-copyright">
               Made with ❤️ for travelers seeking unforgettable mountain adventures
               <br />
-              <span className="text-sm">&copy; {new Date().getFullYear()} BOS VILLA TAWANGMANGU. All rights reserved.</span>
+              <span className="text-sm">&copy; {new Date().getFullYear()} PESONA GLAMPING TAWANGMANGU. All rights reserved.</span>
             </p>
           </div>
         </div>

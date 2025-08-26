@@ -304,13 +304,13 @@ export default function PropertyModal({ property, onClose }: PropertyModalProps)
 
   const handleWhatsApp = () => {
     const message = `Halo, saya tertarik dengan ${property.name} di ${property.location}. Bisakah saya mendapatkan informasi lebih lanjut?`;
-    const whatsappUrl = `https://wa.me/6281226374041?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/6282241819991?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleCall = () => {
     const message = `Halo, saya ingin menghubungi langsung tentang ${property.name}. Mohon info lebih lanjut`;
-    const whatsappUrl = `https://wa.me/6281226374041?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/6282241819991?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

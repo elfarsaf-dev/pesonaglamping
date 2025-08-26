@@ -1071,6 +1071,20 @@ export const glampingData: Property[] = [
 }
 ];
 
+// Shuffle function to randomize arrays
+function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+// Export shuffled villa and glamping data
+export const shuffledVillaData = shuffleArray(villaData);
+export const shuffledGlampingData = shuffleArray(glampingData);
+
 export const tripData: Trip[] = [
   // SHORT TRIPS
   {
@@ -1412,11 +1426,11 @@ export const tripData: Trip[] = [
 ];
 
 export const getAllProperties = (): Property[] => {
-  return [...villaData, ...glampingData];
+  return [...shuffledVillaData, ...shuffledGlampingData];
 };
 
 export const getPropertiesByType = (type: "villa" | "glamping"): Property[] => {
-  return type === "villa" ? villaData : glampingData;
+  return type === "villa" ? shuffledVillaData : shuffledGlampingData;
 };
 
 export const getAllTrips = (): Trip[] => {

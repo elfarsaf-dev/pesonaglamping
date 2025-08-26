@@ -4,7 +4,7 @@ import SearchBar from "@/components/search-bar";
 import PropertyCard from "@/components/property-card";
 import PropertyModal from "@/components/property-modal";
 import FloatingToggle from "@/components/floating-toggle";
-import JeepSection from "@/components/jeep-section";
+
 import AdvantagesSection from "@/components/advantages-section";
 import AboutSection from "@/components/about-section";
 import ContactSection from "@/components/contact-section";
@@ -42,10 +42,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Pilihan Akomodasi Terbaik
+              Pilihan Glamping & Villa Terbaik
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Temukan villa dan glamping impian Anda dengan fasilitas lengkap dan pemandangan menakjubkan di Tawangmangu
+              Temukan glamping dan villa impian Anda dengan fasilitas lengkap dan pemandangan menakjubkan di Tawangmangu
             </p>
           </div>
           
@@ -75,14 +75,13 @@ export default function Home() {
         </div>
       </section>
 
-      <JeepSection />
       <AdvantagesSection />
       <AboutSection />
       <ContactSection />
 
       <FloatingToggle 
         currentType={propertyType} 
-        onToggle={() => setPropertyType(propertyType === "villa" ? "glamping" : "villa")}
+        onToggle={() => setPropertyType(propertyType === "glamping" ? "villa" : "glamping")}
       />
 
       {selectedProperty && (

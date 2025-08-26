@@ -4,7 +4,7 @@ import type { PropertyType } from "@shared/schema";
 
 export function useProperties() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [propertyType, setPropertyType] = useState<PropertyType>("villa");
+  const [propertyType, setPropertyType] = useState<PropertyType>("glamping");
   const [displayedCount, setDisplayedCount] = useState(6);
 
   const allProperties = useMemo(() => 
