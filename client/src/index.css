@@ -8,11 +8,11 @@
 @layer base {
   :root {
     /* Light Theme */
-    --background: hsl(0, 0%, 88%);
+    --background: hsl(0, 6%, 76%);
     --foreground: hsl(240, 10%, 3.9%);
-    --card: hsl(0, 0%, 92%);
+    --card: hsl(222, 69%, 86%);
     --card-foreground: hsl(240, 10%, 3.9%);
-    --popover: hsl(0, 0%, 92%);
+    --popover: hsl(0, 4%, 77%);
     --popover-foreground: hsl(240, 10%, 3.9%);
     --primary: hsl(340, 82%, 52%);
     --primary-foreground: hsl(355.7, 100%, 97.3%);
@@ -23,7 +23,7 @@
     --accent: hsl(240, 4.8%, 95.9%);
     --accent-foreground: hsl(240, 5.9%, 10%);
     --destructive: hsl(0, 84.2%, 60.2%);
-    --destructive-foreground: hsl(210, 40%, 98%);
+    --destructive-foreground: hsl(210, 57%, 91%);
     --border: hsl(240, 5.9%, 90%);
     --input: hsl(240, 5.9%, 90%);
     --ring: hsl(340, 82%, 52%);
@@ -84,9 +84,9 @@
 
   .light-theme {
     /* Light Theme Colors */
-    --background: hsl(0, 0%, 100%);
+    --background: hsl(238, 90%, 84%);
     --foreground: hsl(240, 10%, 3.9%);
-    --card: hsl(0, 0%, 100%);
+    --card: hsl(241, 100%, 83%);
     --card-foreground: hsl(240, 10%, 3.9%);
     --popover: hsl(0, 0%, 100%);
     --popover-foreground: hsl(240, 10%, 3.9%);
