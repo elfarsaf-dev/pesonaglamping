@@ -8,11 +8,11 @@
 @layer base {
   :root {
     /* Light Theme */
-    --background: hsl(0, 0%, 96%);
+    --background: hsl(0, 0%, 88%);
     --foreground: hsl(240, 10%, 3.9%);
-    --card: hsl(0, 0%, 98%);
+    --card: hsl(0, 0%, 92%);
     --card-foreground: hsl(240, 10%, 3.9%);
-    --popover: hsl(0, 0%, 98%);
+    --popover: hsl(0, 0%, 92%);
     --popover-foreground: hsl(240, 10%, 3.9%);
     --primary: hsl(340, 82%, 52%);
     --primary-foreground: hsl(355.7, 100%, 97.3%);
