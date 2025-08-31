@@ -930,7 +930,7 @@ export const glampingData: Property[] = [
 },
   {
   "id": "omah-gunung-glamping",
-  "name": "Glamping Omah Gunung",
+  "name": "Glamping Gunung",
   "location": "Tawangmangu",
   "rates": [
     { "label": "Minggu-Kamis", "price": 450000 },
@@ -949,7 +949,14 @@ export const glampingData: Property[] = [
     "Breakfast for 2"
   ],
   "capacity": "2-3 orang",
-  "notes": [],
+  "notes": [
+    "Check in jam 14.00",
+    "Check out jam 12.00",
+    "Bukti nikah untuk pasangan",
+    "No miras",
+    "No mesum",
+    "No drugs"
+  ],
   "image": "https://raw.githubusercontent.com/elfarsaf-dev/Heu/main/uploads/IMG_6512.jpeg",
   "type": "glamping"
 },
