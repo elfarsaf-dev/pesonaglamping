@@ -1,8 +1,16 @@
 # Overview
 
-This is a full-stack glamping and villa rental booking platform called "PESONA GLAMPING TAWANGMANGU" (rebranded from "BOS VILLA TAWANGMANGU") that showcases accommodation options in the Tawangmangu area near Mount Lawu in Indonesia. Features pink Bukalapak-style design theme with randomized property listings. The application serves as a property listing and information website where users can browse villas and glamping sites, view detailed information including facilities, rates, and images, and contact the business directly through WhatsApp or phone for bookings.
+This is a full-stack glamping and villa rental booking platform called "PESONA GLAMPING TAWANGMANGU" that showcases premium accommodation options in the Tawangmangu area near Mount Lawu in Indonesia. The platform features a modern pink-purple gradient theme with clean, minimalist design focusing on visual content and user experience.
 
-The platform features a modern, responsive design with a focus on showcasing properties through rich visual content and detailed information. It includes property search functionality, filtering by accommodation type (villa vs glamping), and a comprehensive property detail modal system.
+The application serves as a property listing and information website where users can browse villas and glamping sites, view detailed information including facilities, rates, and images, and contact the business directly through WhatsApp or phone for bookings. Features include property search functionality, filtering by accommodation type, responsive design for all devices, and a comprehensive property detail modal system with booking integration.
+
+## Recent Updates (August 2025)
+- Optimized light/dark theme switching with better contrast
+- Removed visual clutter (logos, decorative images) for cleaner design  
+- Improved mobile responsiveness, especially contact section layout
+- Enhanced search functionality visibility across both themes
+- Added favicon with official brand logo
+- Updated color scheme: light mode uses softer gray background (88% instead of pure white)
 
 # User Preferences
 

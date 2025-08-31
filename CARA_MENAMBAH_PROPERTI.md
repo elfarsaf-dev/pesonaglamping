@@ -1,4 +1,34 @@
-# 📋 Cara Menambah Properti Villa atau Glamping
+# 📋 Template & Panduan Menambah Properti
+
+## 🚀 Template Form Cepat
+
+### ✂️ Copy Template Ini untuk Properti Baru:
+
+```typescript
+{
+  id: "[TIPE]-[NAMA-SINGKAT]",
+  name: "[NAMA LENGKAP PROPERTI]",
+  location: "[ALAMAT LENGKAP]",
+  rates: [
+    { label: "Minggu-Kamis", price: [HARGA_WEEKDAY] },
+    { label: "Jumat-Sabtu", price: [HARGA_WEEKEND] }
+  ],
+  units: [JUMLAH_UNIT],
+  facilities: [
+    "[FASILITAS 1]",
+    "[FASILITAS 2]",
+    "[FASILITAS 3]"
+  ],
+  capacity: "[KAPASITAS TAMU]",
+  notes: [
+    "Check in jam 14.00",
+    "Check out jam 12.00",
+    "[ATURAN KHUSUS]"
+  ],
+  image: "[URL_GAMBAR]",
+  type: "[villa/glamping]"
+},
+```
 
 ## 🗂️ File yang Perlu Diedit
 
@@ -14,69 +44,77 @@ File utama yang berisi data properti: `shared/data.ts`
 - Cari array `glampingData` di file `shared/data.ts`
 - Tambahkan properti baru di akhir array sebelum tanda `];`
 
-## 📝 Template Properti Villa
+## 📋 Contoh Lengkap Per Tipe
 
+### 🏠 Contoh Villa:
 ```typescript
 {
-  id: "villa-nama-unik",
-  name: "Nama Villa",
-  location: "Lokasi Villa",
+  id: "villa-pinus-hijau",
+  name: "Villa Pinus Hijau", 
+  location: "Jl. Lawu No. 25, Sekipan, Tawangmangu",
   rates: [
-    { label: "Weekday", price: 1500000 },
-    { label: "Weekend", price: 2000000 }
+    { label: "Minggu-Kamis", price: 2000000 },
+    { label: "Jumat", price: 2500000 },
+    { label: "Sabtu", price: 3000000 }
   ],
   units: 1,
   facilities: [
-    "3 Kamar tidur",
-    "2 Kamar mandi",
-    "Kolam renang",
-    "Wi-Fi",
-    "Dapur lengkap"
+    "4 Kamar tidur AC",
+    "3 Kamar mandi water heater",
+    "Kolam renang private",
+    "Karaoke keluarga",
+    "Kitchen set lengkap",
+    "Free Wi-Fi",
+    "Parkir 6 mobil",
+    "View gunung Lawu"
   ],
-  capacity: "Maksimal 20 orang",
+  capacity: "20-25 orang",
   notes: [
     "Check in jam 14.00",
-    "Check out jam 12.00",
-    "No miras",
-    "No mesum",
-    "No drugs"
+    "Check out jam 12.00", 
+    "DP 30% dari total harga",
+    "Bukti nikah untuk pasangan",
+    "Jam malam 23.00 WIB",
+    "Dilarang membawa miras"
   ],
-  image: "https://link-gambar-villa.jpg",
+  image: "https://github.com/elfarsaf-dev/lawuscape-/blob/main/Gambar/villa-pinus.jpg?raw=true",
   type: "villa"
-}
+},
 ```
 
-## 📝 Template Properti Glamping
-
+### 🏕️ Contoh Glamping:
 ```typescript
 {
-  id: "glamping-nama-unik",
-  name: "Nama Glamping",
-  location: "Lokasi Glamping",
+  id: "glamping-dome-aurora",
+  name: "Glamping Dome Aurora",
+  location: "Area Perkemahan Tawangmangu, Sekipan", 
   rates: [
-    { label: "Weekday", price: 500000 },
-    { label: "Weekend", price: 700000 }
+    { label: "Minggu-Kamis", price: 650000 },
+    { label: "Jumat-Sabtu", price: 850000 }
   ],
-  units: 3,
+  units: 4,
   facilities: [
-    "1 Bed Queen Size",
+    "Dome transparan bintang",
+    "1 King bed orthopedic",
     "Kamar mandi air hangat",
-    "Private pool",
-    "Smart TV",
-    "Free breakfast"
+    "Mini pool private",
+    "Smart TV 43 inch",
+    "Free breakfast for 2",
+    "Coffee maker",
+    "View sunrise Lawu"
   ],
   capacity: "2-4 orang",
   notes: [
-    "Check in jam 14.00",
+    "Check in jam 15.00",
     "Check out jam 12.00",
-    "Bukti nikah untuk pasangan",
-    "No miras",
-    "No mesum",
-    "No drugs"
+    "Khusus dewasa 18+ tahun", 
+    "Bukti nikah wajib",
+    "No smoking area",
+    "Advance booking 3 hari"
   ],
-  image: "https://link-gambar-glamping.jpg",
+  image: "https://github.com/elfarsaf-dev/lawuscape-/blob/main/Gambar/dome-aurora.jpg?raw=true",
   type: "glamping"
-}
+},
 ```
 
 ## 📋 Penjelasan Field
