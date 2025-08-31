@@ -172,55 +172,9 @@
     50% { transform: translateY(-20px); }
   }
 
-  /* Gradient text */
-  .gradient-text {
-    background: linear-gradient(135deg, hsl(340, 82%, 52%), hsl(45, 95%, 65%), hsl(340, 70%, 40%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradient-shift 8s ease-in-out infinite;
-  }
+  /* Gradient text styles removed - using solid colors now */
 
-  .galaxy-theme .gradient-text {
-    background: linear-gradient(135deg, var(--galaxy-purple), var(--galaxy-blue), var(--galaxy-pink), var(--galaxy-cyan));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: gradient-shift 8s ease-in-out infinite;
-  }
-
-  .light-theme .gradient-text {
-    background: linear-gradient(135deg, hsl(340, 82%, 52%), hsl(45, 95%, 65%), hsl(340, 70%, 40%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    /* Fallback for when gradient doesn't work */
-    color: hsl(340, 82%, 52%);
-  }
-  
-  /* Fix gradient text readability */
-  .light-theme .gradient-text {
-    background: linear-gradient(135deg, hsl(340, 82%, 40%), hsl(280, 60%, 40%), hsl(340, 70%, 30%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: hsl(340, 82%, 40%);
-  }
-
-  @keyframes gradient-shift {
-    0%, 100% { 
-      background: linear-gradient(135deg, var(--galaxy-purple), var(--galaxy-blue), var(--galaxy-pink), var(--galaxy-cyan));
-    }
-    25% { 
-      background: linear-gradient(135deg, var(--galaxy-blue), var(--galaxy-pink), var(--galaxy-cyan), var(--galaxy-purple));
-    }
-    50% { 
-      background: linear-gradient(135deg, var(--galaxy-pink), var(--galaxy-cyan), var(--galaxy-purple), var(--galaxy-blue));
-    }
-    75% { 
-      background: linear-gradient(135deg, var(--galaxy-cyan), var(--galaxy-purple), var(--galaxy-blue), var(--galaxy-pink));
-    }
-  }
+  /* Gradient animation removed */
 
   /* Smooth animations */
   .animate-slide-up {
@@ -325,6 +279,16 @@
   /* Ensure all text is visible in light theme */
   .light-theme .text-white {
     color: hsl(240, 10%, 10%) !important;
+  }
+  
+  /* Keep yellow text consistent in both modes */
+  .text-yellow-400 {
+    color: hsl(45, 95%, 50%) !important;
+  }
+  
+  /* Override for hero section - keep white text in hero */
+  .light-theme .hero-bg .text-white {
+    color: white !important;
   }
   
   /* Force dark text on light backgrounds */

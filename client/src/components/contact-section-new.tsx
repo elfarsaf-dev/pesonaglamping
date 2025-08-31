@@ -43,8 +43,8 @@ export default function ContactSectionNew() {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">Hubungi</span>
-            <span className="dynamic-text"> Kami</span>
+            <span className="text-yellow-400">Hubungi</span>
+            <span className="text-white"> Kami</span>
           </h2>
           <p className="text-xl dynamic-text-light max-w-3xl mx-auto leading-relaxed">
             Siap membantu Anda merencanakan liburan yang tak terlupakan di Tawangmangu
@@ -92,7 +92,7 @@ export default function ContactSectionNew() {
               />
             </div>
             
-            <h3 className="text-3xl font-bold gradient-text mb-4">
+            <h3 className="text-3xl font-bold text-yellow-400 mb-4">
               PESONA GLAMPING TAWANGMANGU
             </h3>
             

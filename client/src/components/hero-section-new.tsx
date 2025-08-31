@@ -26,12 +26,12 @@ export default function HeroSectionNew() {
           </div>
         </div>
         
-        {/* Main headline with gradient text */}
+        {/* Main headline with solid colors */}
         <div className="animate-slide-up" style={{animationDelay: '0.2s'}}>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="gradient-text">Pesona</span>
+            <span className="text-yellow-400">Pesona</span>
             <br />
-            <span className="dynamic-text">Glamping</span>
+            <span className="text-white">Glamping</span>
             <br />
             <span className="text-yellow-400">Tawangmangu</span>
           </h1>

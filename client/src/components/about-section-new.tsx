@@ -23,9 +23,9 @@ export default function AboutSectionNew() {
           {/* Content */}
           <div className="animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              <span className="gradient-text">Tentang</span>
+              <span className="text-yellow-400">Tentang</span>
               <br />
-              <span className="dynamic-text">Pesona Glamping</span>
+              <span className="text-white">Pesona Glamping</span>
               <br />
               <span className="text-yellow-400">Tawangmangu</span>
             </h2>
