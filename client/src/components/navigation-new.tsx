@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/theme-toggle";
+import logoImage from "@assets/logo pesona_1756221891563.png";
 
 export default function NavigationNew() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,8 +39,12 @@ export default function NavigationNew() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-primary-500 to-primary-600 flex items-center justify-center">
-              <span className="text-white font-bold text-xl">PG</span>
+            <div className="w-12 h-12 rounded-xl glass-card flex items-center justify-center p-2">
+              <img 
+                src={logoImage} 
+                alt="Pesona Glamping Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="text-white">
               <h1 className="text-xl font-bold">Pesona Glamping</h1>
@@ -61,8 +67,9 @@ export default function NavigationNew() {
             ))}
           </div>
 
-          {/* Contact Button */}
+          {/* Contact Button & Theme Toggle */}
           <div className="hidden md:flex items-center space-x-4">
+            <ThemeToggle />
             <Button
               onClick={() => window.open('https://wa.me/6282241819991?text=Halo%2C%20saya%20tertarik%20dengan%20PESONA%20GLAMPING%20TAWANGMANGU', '_blank')}
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105"
@@ -73,8 +80,9 @@ export default function NavigationNew() {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button & theme toggle */}
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
             <Button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               variant="ghost"

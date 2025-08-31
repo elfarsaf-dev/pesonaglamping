@@ -7,31 +7,27 @@
 
 @layer base {
   :root {
-    --background: hsl(240, 10%, 3.9%);
-    --foreground: hsl(0, 0%, 98%);
-    --card: hsl(240, 10%, 3.9%);
-    --card-foreground: hsl(0, 0%, 98%);
-    --popover: hsl(240, 10%, 3.9%);
-    --popover-foreground: hsl(0, 0%, 98%);
+    /* Light Theme */
+    --background: hsl(0, 0%, 100%);
+    --foreground: hsl(240, 10%, 3.9%);
+    --card: hsl(0, 0%, 100%);
+    --card-foreground: hsl(240, 10%, 3.9%);
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(240, 10%, 3.9%);
     --primary: hsl(340, 82%, 52%);
     --primary-foreground: hsl(355.7, 100%, 97.3%);
-    --secondary: hsl(240, 3.7%, 15.9%);
-    --secondary-foreground: hsl(0, 0%, 98%);
-    --muted: hsl(240, 3.7%, 15.9%);
-    --muted-foreground: hsl(240, 5%, 64.9%);
-    --accent: hsl(240, 3.7%, 15.9%);
-    --accent-foreground: hsl(0, 0%, 98%);
-    --destructive: hsl(0, 62.8%, 30.6%);
-    --destructive-foreground: hsl(0, 0%, 98%);
-    --border: hsl(240, 3.7%, 15.9%);
-    --input: hsl(240, 3.7%, 15.9%);
+    --secondary: hsl(240, 4.8%, 95.9%);
+    --secondary-foreground: hsl(240, 5.9%, 10%);
+    --muted: hsl(240, 4.8%, 95.9%);
+    --muted-foreground: hsl(240, 3.8%, 45%);
+    --accent: hsl(240, 4.8%, 95.9%);
+    --accent-foreground: hsl(240, 5.9%, 10%);
+    --destructive: hsl(0, 84.2%, 60.2%);
+    --destructive-foreground: hsl(210, 40%, 98%);
+    --border: hsl(240, 5.9%, 90%);
+    --input: hsl(240, 5.9%, 90%);
     --ring: hsl(340, 82%, 52%);
     --radius: 1rem;
-    --chart-1: hsl(220, 70%, 50%);
-    --chart-2: hsl(160, 60%, 45%);
-    --chart-3: hsl(30, 80%, 55%);
-    --chart-4: hsl(280, 65%, 60%);
-    --chart-5: hsl(340, 75%, 55%);
 
     /* Primary Pink Colors */
     --primary-50: hsl(340, 100%, 97%);
@@ -45,37 +41,73 @@
     --primary-800: hsl(340, 65%, 35%);
     --primary-900: hsl(340, 60%, 30%);
 
-    /* Glass effect variables */
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    /* Light theme glass effects */
+    --glass-bg: rgba(255, 255, 255, 0.2);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   }
 
-  .dark {
-    --background: hsl(240, 10%, 3.9%);
+  .galaxy-theme {
+    /* Galaxy Dark Theme */
+    --background: hsl(240, 15%, 4%);
     --foreground: hsl(0, 0%, 98%);
-    --card: hsl(240, 10%, 3.9%);
+    --card: hsl(240, 15%, 6%);
     --card-foreground: hsl(0, 0%, 98%);
-    --popover: hsl(240, 10%, 3.9%);
+    --popover: hsl(240, 15%, 6%);
     --popover-foreground: hsl(0, 0%, 98%);
-    --primary: hsl(340, 82%, 52%);
-    --primary-foreground: hsl(355.7, 100%, 97.3%);
-    --secondary: hsl(240, 3.7%, 15.9%);
+    --primary: hsl(271, 91%, 65%);
+    --primary-foreground: hsl(0, 0%, 98%);
+    --secondary: hsl(240, 10%, 12%);
     --secondary-foreground: hsl(0, 0%, 98%);
-    --muted: hsl(240, 3.7%, 15.9%);
+    --muted: hsl(240, 10%, 12%);
     --muted-foreground: hsl(240, 5%, 64.9%);
-    --accent: hsl(240, 3.7%, 15.9%);
+    --accent: hsl(240, 10%, 12%);
     --accent-foreground: hsl(0, 0%, 98%);
     --destructive: hsl(0, 62.8%, 30.6%);
     --destructive-foreground: hsl(0, 0%, 98%);
-    --border: hsl(240, 3.7%, 15.9%);
-    --input: hsl(240, 3.7%, 15.9%);
+    --border: hsl(240, 10%, 12%);
+    --input: hsl(240, 10%, 12%);
+    --ring: hsl(271, 91%, 65%);
+
+    /* Galaxy theme colors */
+    --galaxy-purple: hsl(271, 91%, 65%);
+    --galaxy-blue: hsl(220, 91%, 65%);
+    --galaxy-pink: hsl(320, 91%, 65%);
+    --galaxy-cyan: hsl(180, 91%, 65%);
+    --galaxy-green: hsl(120, 91%, 65%);
+
+    /* Galaxy glass effects */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .light-theme {
+    /* Light Theme Colors */
+    --background: hsl(0, 0%, 100%);
+    --foreground: hsl(240, 10%, 3.9%);
+    --card: hsl(0, 0%, 100%);
+    --card-foreground: hsl(240, 10%, 3.9%);
+    --popover: hsl(0, 0%, 100%);
+    --popover-foreground: hsl(240, 10%, 3.9%);
+    --primary: hsl(340, 82%, 52%);
+    --primary-foreground: hsl(355.7, 100%, 97.3%);
+    --secondary: hsl(240, 4.8%, 95.9%);
+    --secondary-foreground: hsl(240, 5.9%, 10%);
+    --muted: hsl(240, 4.8%, 95.9%);
+    --muted-foreground: hsl(240, 3.8%, 45%);
+    --accent: hsl(240, 4.8%, 95.9%);
+    --accent-foreground: hsl(240, 5.9%, 10%);
+    --destructive: hsl(0, 84.2%, 60.2%);
+    --destructive-foreground: hsl(210, 40%, 98%);
+    --border: hsl(240, 5.9%, 90%);
+    --input: hsl(240, 5.9%, 90%);
     --ring: hsl(340, 82%, 52%);
-    --chart-1: hsl(220, 70%, 50%);
-    --chart-2: hsl(160, 60%, 45%);
-    --chart-3: hsl(30, 80%, 55%);
-    --chart-4: hsl(280, 65%, 60%);
-    --chart-5: hsl(340, 75%, 55%);
+
+    /* Light theme glass effects */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.8);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -141,11 +173,34 @@
   }
 
   /* Gradient text */
-  .gradient-text {
+  .galaxy-theme .gradient-text {
+    background: linear-gradient(135deg, var(--galaxy-purple), var(--galaxy-blue), var(--galaxy-pink), var(--galaxy-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 8s ease-in-out infinite;
+  }
+
+  .light-theme .gradient-text {
     background: linear-gradient(135deg, hsl(340, 82%, 52%), hsl(45, 95%, 65%), hsl(340, 70%, 40%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { 
+      background: linear-gradient(135deg, var(--galaxy-purple), var(--galaxy-blue), var(--galaxy-pink), var(--galaxy-cyan));
+    }
+    25% { 
+      background: linear-gradient(135deg, var(--galaxy-blue), var(--galaxy-pink), var(--galaxy-cyan), var(--galaxy-purple));
+    }
+    50% { 
+      background: linear-gradient(135deg, var(--galaxy-pink), var(--galaxy-cyan), var(--galaxy-purple), var(--galaxy-blue));
+    }
+    75% { 
+      background: linear-gradient(135deg, var(--galaxy-cyan), var(--galaxy-purple), var(--galaxy-blue), var(--galaxy-pink));
+    }
   }
 
   /* Smooth animations */
@@ -192,19 +247,54 @@
 }
 
 @layer utilities {
-  .hero-bg {
+  /* Galaxy theme hero background */
+  .galaxy-theme .hero-bg {
+    background: radial-gradient(ellipse at top, hsl(271, 91%, 20%) 0%, hsl(240, 15%, 4%) 50%),
+                radial-gradient(ellipse at bottom, hsl(220, 91%, 15%) 0%, hsl(240, 15%, 4%) 50%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .galaxy-theme .hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      radial-gradient(circle at 20% 80%, hsla(271, 91%, 65%, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsla(220, 91%, 65%, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsla(320, 91%, 65%, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  
+  .galaxy-theme .hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="0.5" fill="white" opacity="0.8"/><circle cx="30" cy="25" r="0.3" fill="white" opacity="0.6"/><circle cx="60" cy="15" r="0.4" fill="white" opacity="0.7"/><circle cx="80" cy="40" r="0.2" fill="white" opacity="0.5"/><circle cx="20" cy="60" r="0.3" fill="white" opacity="0.6"/><circle cx="70" cy="70" r="0.5" fill="white" opacity="0.8"/><circle cx="90" cy="85" r="0.2" fill="white" opacity="0.4"/><circle cx="40" cy="80" r="0.3" fill="white" opacity="0.6"/></pattern></defs><rect width="100" height="100" fill="url(%23stars)"/></svg>');
+    pointer-events: none;
+    animation: twinkle 8s ease-in-out infinite;
+  }
+
+  /* Light theme hero background */
+  .light-theme .hero-bg {
     background: linear-gradient(135deg, 
-      hsl(240, 10%, 3.9%) 0%,
-      hsl(340, 82%, 52%) 25%,
-      hsl(45, 95%, 65%) 50%,
-      hsl(340, 70%, 40%) 75%,
-      hsl(240, 10%, 3.9%) 100%
+      hsl(340, 82%, 52%) 0%,
+      hsl(45, 95%, 65%) 25%,
+      hsl(340, 70%, 40%) 50%,
+      hsl(45, 90%, 60%) 75%,
+      hsl(340, 60%, 30%) 100%
     );
     position: relative;
     overflow: hidden;
   }
   
-  .hero-bg::before {
+  .light-theme .hero-bg::before {
     content: '';
     position: absolute;
     top: 0;
@@ -216,7 +306,7 @@
     pointer-events: none;
   }
   
-  .hero-bg::after {
+  .light-theme .hero-bg::after {
     content: '';
     position: absolute;
     top: 0;
@@ -225,6 +315,56 @@
     bottom: 0;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.05"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.05"/><circle cx="50" cy="10" r="1" fill="white" opacity="0.03"/><circle cx="10" cy="60" r="1" fill="white" opacity="0.03"/><circle cx="90" cy="40" r="1" fill="white" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
     pointer-events: none;
+  }
+
+  /* Twinkle animation for stars */
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0.3; }
+  }
+
+  /* Galaxy specific effects */
+  .galaxy-theme .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .galaxy-theme .glass-card:hover {
+    border-color: var(--galaxy-purple);
+    box-shadow: 0 16px 64px 0 rgba(139, 92, 246, 0.3);
+  }
+
+  /* Light theme effects */
+  .light-theme .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .light-theme .glass-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 16px 64px 0 rgba(244, 63, 94, 0.2);
+  }
+
+  /* Section backgrounds */
+  .galaxy-theme .section-blur {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+  }
+
+  .light-theme .section-blur {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+  }
+
+  /* Theme specific text colors */
+  .galaxy-theme .text-foreground {
+    color: hsl(0, 0%, 98%);
+  }
+
+  .light-theme .text-foreground {
+    color: hsl(240, 10%, 3.9%);
   }
 }
 
