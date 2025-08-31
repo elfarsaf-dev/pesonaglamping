@@ -52,25 +52,25 @@ export default function ContactSectionNew() {
         </div>
 
         {/* Contact Methods */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-3 gap-4 md:gap-8 mb-16">
           {contactMethods.map((method, index) => (
             <div 
               key={index}
-              className="glass-card p-8 text-center hover-lift animate-slide-up"
+              className="glass-card p-3 md:p-8 text-center hover-lift animate-slide-up"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              <div className={`w-16 h-16 ${method.color} mx-auto mb-6 p-4 rounded-2xl glass`}>
+              <div className={`w-12 h-12 md:w-16 md:h-16 ${method.color} mx-auto mb-3 md:mb-6 p-2 md:p-4 rounded-2xl glass`}>
                 <method.icon className="w-full h-full" />
               </div>
               
-              <h3 className="text-2xl font-bold dynamic-text mb-2">{method.title}</h3>
-              <p className="dynamic-text-light mb-4">{method.description}</p>
-              <p className="text-lg font-semibold dynamic-text mb-6">{method.value}</p>
+              <h3 className="text-lg md:text-2xl font-bold dynamic-text mb-1 md:mb-2">{method.title}</h3>
+              <p className="text-xs md:text-base dynamic-text-light mb-2 md:mb-4">{method.description}</p>
+              <p className="text-sm md:text-lg font-semibold dynamic-text mb-3 md:mb-6">{method.value}</p>
               
               {method.action && (
                 <Button 
                   onClick={method.action.onClick}
-                  className={`w-full text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${method.action.className}`}
+                  className={`w-full text-white px-2 py-2 md:px-6 md:py-3 rounded-xl text-xs md:text-base font-semibold transition-all duration-300 transform hover:scale-105 ${method.action.className}`}
                   data-testid={`button-contact-${index}`}
                 >
                   {method.action.text}
