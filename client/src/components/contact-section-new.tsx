@@ -64,8 +64,8 @@ export default function ContactSectionNew() {
               </div>
               
               <h3 className="text-lg md:text-2xl font-bold dynamic-text mb-1 md:mb-2">{method.title}</h3>
-              <p className="text-xs md:text-base dynamic-text-light mb-2 md:mb-4">{method.description}</p>
-              <p className="text-sm md:text-lg font-semibold dynamic-text mb-3 md:mb-6">{method.value}</p>
+              <p className="text-xs md:text-base dynamic-text-light mb-2 md:mb-4 md:block hidden">{method.description}</p>
+              <p className="text-sm md:text-lg font-semibold dynamic-text mb-3 md:mb-6 md:block hidden">{method.value}</p>
               
               {method.action && (
                 <Button 

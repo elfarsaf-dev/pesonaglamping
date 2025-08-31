@@ -42,10 +42,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="gradient-text">Koleksi</span>
-              <span className="text-white"> Eksklusif</span>
+              <span className="text-yellow-400">Koleksi</span>
+              <span className="dynamic-text"> Eksklusif</span>
             </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl dynamic-text-muted max-w-3xl mx-auto leading-relaxed">
               Jelajahi glamping dan villa premium dengan teknologi modern dan pemandangan Gunung Lawu yang menakjubkan
             </p>
           </div>
