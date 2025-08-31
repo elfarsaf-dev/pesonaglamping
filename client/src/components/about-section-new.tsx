@@ -62,7 +62,7 @@ export default function AboutSectionNew() {
                 >
                   <stat.icon className={`${stat.color} h-8 w-8 mx-auto mb-2`} />
                   <div className="text-2xl font-bold dynamic-text mb-1">{stat.value}</div>
-                  <div className="text-sm dynamic-text-light">{stat.label}</div>
+                  <div className="text-sm dynamic-text-muted">{stat.label}</div>
                 </div>
               ))}
             </div>

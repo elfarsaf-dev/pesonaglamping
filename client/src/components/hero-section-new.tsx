@@ -48,21 +48,21 @@ export default function HeroSectionNew() {
         <div className="animate-slide-up mb-12" style={{animationDelay: '0.6s'}}>
           <div className="flex flex-wrap justify-center gap-6">
             <div className="glass-card px-6 py-4">
-              <div className="flex items-center space-x-2 dynamic-text">
+              <div className="flex items-center space-x-2">
                 <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                <span className="font-semibold dynamic-text">4.9 Rating</span>
+                <span className="font-semibold text-white">4.9 Rating</span>
               </div>
             </div>
             <div className="glass-card px-6 py-4">
-              <div className="flex items-center space-x-2 dynamic-text">
+              <div className="flex items-center space-x-2">
                 <MapPin className="w-5 h-5 text-primary-400" />
-                <span className="font-semibold dynamic-text">50+ Properti</span>
+                <span className="font-semibold text-white">50+ Properti</span>
               </div>
             </div>
             <div className="glass-card px-6 py-4">
-              <div className="flex items-center space-x-2 dynamic-text">
+              <div className="flex items-center space-x-2">
                 <Calendar className="w-5 h-5 text-green-400" />
-                <span className="font-semibold dynamic-text">5000+ Tamu</span>
+                <span className="font-semibold text-white">5000+ Tamu</span>
               </div>
             </div>
           </div>
