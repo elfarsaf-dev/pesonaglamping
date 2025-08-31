@@ -1,13 +1,13 @@
-import Navigation from "@/components/navigation";
-import HeroSection from "@/components/hero-section";
-import SearchBar from "@/components/search-bar";
-import PropertyCard from "@/components/property-card";
+import NavigationNew from "@/components/navigation-new";
+import HeroSectionNew from "@/components/hero-section-new";
+import SearchBarNew from "@/components/search-bar-new";
+import PropertyCardNew from "@/components/property-card-new";
 import PropertyModal from "@/components/property-modal";
-import FloatingToggle from "@/components/floating-toggle";
+import FloatingToggleNew from "@/components/floating-toggle-new";
 
 import AdvantagesSection from "@/components/advantages-section";
-import AboutSection from "@/components/about-section";
-import ContactSection from "@/components/contact-section";
+import AboutSectionNew from "@/components/about-section-new";
+import ContactSectionNew from "@/components/contact-section-new";
 import { Button } from "@/components/ui/button";
 import { useProperties } from "@/hooks/use-properties";
 import { useState } from "react";
@@ -32,40 +32,46 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Navigation />
-      <HeroSection />
-      <SearchBar searchQuery={searchQuery} onSearchChange={setSearchQuery} />
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
+      <NavigationNew />
+      <HeroSectionNew />
+      <SearchBarNew searchQuery={searchQuery} onSearchChange={setSearchQuery} />
       
       {/* Properties Section */}
-      <section id="properties" className="py-16">
+      <section id="properties" className="py-20 section-blur">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Pilihan Glamping & Villa Terbaik
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="gradient-text">Koleksi</span>
+              <span className="text-white"> Eksklusif</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Temukan glamping dan villa impian Anda dengan fasilitas lengkap dan pemandangan menakjubkan di Tawangmangu
+            <p className="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+              Jelajahi glamping dan villa premium dengan teknologi modern dan pemandangan Gunung Lawu yang menakjubkan
             </p>
           </div>
           
           {/* Property Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8" data-testid="properties-grid">
-            {properties.slice(0, displayedCount).map((property) => (
-              <PropertyCard 
-                key={property.id} 
-                property={property} 
-                onViewDetail={() => setSelectedProperty(property)}
-              />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="properties-grid">
+            {properties.slice(0, displayedCount).map((property, index) => (
+              <div 
+                key={property.id}
+                className="animate-slide-up"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <PropertyCardNew 
+                  property={property} 
+                  onView={() => setSelectedProperty(property)}
+                />
+              </div>
             ))}
           </div>
           
           {/* Load More Button */}
           {hasMore && (
-            <div className="text-center mt-12">
+            <div className="text-center mt-16">
               <Button 
                 onClick={handleLoadMore}
-                className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200"
+                className="btn-secondary text-lg px-10 py-4"
                 data-testid="button-load-more"
               >
                 Lihat Lebih Banyak
@@ -75,11 +81,10 @@ export default function Home() {
         </div>
       </section>
 
-      <AdvantagesSection />
-      <AboutSection />
-      <ContactSection />
+      <AboutSectionNew />
+      <ContactSectionNew />
 
-      <FloatingToggle 
+      <FloatingToggleNew 
         currentType={propertyType} 
         onToggle={() => setPropertyType(propertyType === "glamping" ? "villa" : "glamping")}
       />
