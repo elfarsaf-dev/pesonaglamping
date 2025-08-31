@@ -15,16 +15,6 @@ export default function HeroSectionNew() {
       
       {/* Main content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        {/* Logo with glass effect */}
-        <div className="mb-8 animate-fade-in">
-          <div className="inline-block glass-card p-8 mb-6">
-            <img 
-              src={logoImage} 
-              alt="PESONA GLAMPING TAWANGMANGU Logo" 
-              className="w-48 h-48 mx-auto object-contain drop-shadow-2xl"
-            />
-          </div>
-        </div>
         
         {/* Main headline with solid colors */}
         <div className="animate-slide-up" style={{animationDelay: '0.2s'}}>
