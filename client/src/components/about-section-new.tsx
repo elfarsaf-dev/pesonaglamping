@@ -25,16 +25,16 @@ export default function AboutSectionNew() {
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
               <span className="gradient-text">Tentang</span>
               <br />
-              <span className="text-white">Pesona Glamping</span>
+              <span className="dynamic-text">Pesona Glamping</span>
               <br />
               <span className="text-yellow-400">Tawangmangu</span>
             </h2>
             
-            <p className="text-xl text-white/80 mb-8 leading-relaxed">
+            <p className="text-xl dynamic-text-muted mb-8 leading-relaxed">
               Kami adalah penyedia akomodasi glamping dan villa terpercaya di Tawangmangu yang telah melayani ribuan tamu dengan pengalaman menginap yang tak terlupakan.
             </p>
             
-            <p className="text-lg text-white/70 mb-10 leading-relaxed">
+            <p className="text-lg dynamic-text-light mb-10 leading-relaxed">
               Dengan koleksi glamping dan villa terbaik, kami berkomitmen memberikan kenyamanan maksimal bagi setiap tamu. Lokasi strategis di kaki Gunung Lawu memberikan akses mudah ke berbagai destinasi wisata dengan udara sejuk pegunungan.
             </p>
             
@@ -47,7 +47,7 @@ export default function AboutSectionNew() {
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <CheckCircle className="text-primary-400 h-5 w-5 flex-shrink-0" />
-                  <span className="text-white/80">{feature}</span>
+                  <span className="dynamic-text-muted">{feature}</span>
                 </div>
               ))}
             </div>
@@ -61,8 +61,8 @@ export default function AboutSectionNew() {
                   style={{ animationDelay: `${(index + 6) * 100}ms` }}
                 >
                   <stat.icon className={`${stat.color} h-8 w-8 mx-auto mb-2`} />
-                  <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
-                  <div className="text-sm text-white/60">{stat.label}</div>
+                  <div className="text-2xl font-bold dynamic-text mb-1">{stat.value}</div>
+                  <div className="text-sm dynamic-text-light">{stat.label}</div>
                 </div>
               ))}
             </div>

@@ -31,7 +31,7 @@ export default function HeroSectionNew() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             <span className="gradient-text">Pesona</span>
             <br />
-            <span className="text-white">Glamping</span>
+            <span className="dynamic-text">Glamping</span>
             <br />
             <span className="text-yellow-400">Tawangmangu</span>
           </h1>
@@ -39,7 +39,7 @@ export default function HeroSectionNew() {
         
         {/* Subtitle */}
         <div className="animate-slide-up" style={{animationDelay: '0.4s'}}>
-          <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl dynamic-text-muted mb-8 max-w-3xl mx-auto leading-relaxed">
             Nikmati pengalaman menginap eksklusif di glamping dan villa modern dengan pemandangan Gunung Lawu yang menakjubkan
           </p>
         </div>
@@ -48,21 +48,21 @@ export default function HeroSectionNew() {
         <div className="animate-slide-up mb-12" style={{animationDelay: '0.6s'}}>
           <div className="flex flex-wrap justify-center gap-6">
             <div className="glass-card px-6 py-4">
-              <div className="flex items-center space-x-2 text-white">
+              <div className="flex items-center space-x-2 dynamic-text">
                 <Star className="w-5 h-5 text-yellow-400 fill-current" />
-                <span className="font-semibold">4.9 Rating</span>
+                <span className="font-semibold dynamic-text">4.9 Rating</span>
               </div>
             </div>
             <div className="glass-card px-6 py-4">
-              <div className="flex items-center space-x-2 text-white">
+              <div className="flex items-center space-x-2 dynamic-text">
                 <MapPin className="w-5 h-5 text-primary-400" />
-                <span className="font-semibold">50+ Properti</span>
+                <span className="font-semibold dynamic-text">50+ Properti</span>
               </div>
             </div>
             <div className="glass-card px-6 py-4">
-              <div className="flex items-center space-x-2 text-white">
+              <div className="flex items-center space-x-2 dynamic-text">
                 <Calendar className="w-5 h-5 text-green-400" />
-                <span className="font-semibold">5000+ Tamu</span>
+                <span className="font-semibold dynamic-text">5000+ Tamu</span>
               </div>
             </div>
           </div>

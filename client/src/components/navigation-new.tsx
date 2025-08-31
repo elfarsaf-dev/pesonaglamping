@@ -46,9 +46,9 @@ export default function NavigationNew() {
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="text-white">
-              <h1 className="text-xl font-bold">Pesona Glamping</h1>
-              <p className="text-sm text-white/70">Tawangmangu</p>
+            <div className="dynamic-text">
+              <h1 className="text-xl font-bold dynamic-text">Pesona Glamping</h1>
+              <p className="text-sm dynamic-text-light">Tawangmangu</p>
             </div>
           </div>
 
@@ -58,7 +58,7 @@ export default function NavigationNew() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-white/80 hover:text-white transition-colors duration-200 font-medium relative group"
+                className="dynamic-text-muted hover:dynamic-text transition-colors duration-200 font-medium relative group"
                 data-testid={`link-${item.label.toLowerCase()}`}
               >
                 {item.label}
@@ -104,7 +104,7 @@ export default function NavigationNew() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="block w-full text-left text-white/80 hover:text-white py-3 px-4 rounded-xl hover:bg-white/10 transition-all duration-200 animate-slide-in"
+                className="block w-full text-left dynamic-text-muted hover:dynamic-text py-3 px-4 rounded-xl hover:bg-white/10 transition-all duration-200 animate-slide-in"
                 style={{ animationDelay: `${index * 50}ms` }}
                 data-testid={`link-mobile-${item.label.toLowerCase()}`}
               >

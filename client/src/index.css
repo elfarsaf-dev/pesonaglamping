@@ -173,6 +173,14 @@
   }
 
   /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(340, 82%, 52%), hsl(45, 95%, 65%), hsl(340, 70%, 40%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 8s ease-in-out infinite;
+  }
+
   .galaxy-theme .gradient-text {
     background: linear-gradient(135deg, var(--galaxy-purple), var(--galaxy-blue), var(--galaxy-pink), var(--galaxy-cyan));
     -webkit-background-clip: text;
@@ -364,6 +372,40 @@
   }
 
   .light-theme .text-foreground {
+    color: hsl(240, 10%, 3.9%);
+  }
+
+  /* Dynamic text colors for themes */
+  .galaxy-theme .dynamic-text {
+    color: hsl(0, 0%, 98%);
+  }
+
+  .light-theme .dynamic-text {
+    color: hsl(240, 10%, 3.9%);
+  }
+
+  .galaxy-theme .dynamic-text-muted {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .light-theme .dynamic-text-muted {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .galaxy-theme .dynamic-text-light {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .light-theme .dynamic-text-light {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Hover states for dynamic text */
+  .galaxy-theme .hover\\:dynamic-text:hover {
+    color: hsl(0, 0%, 98%);
+  }
+
+  .light-theme .hover\\:dynamic-text:hover {
     color: hsl(240, 10%, 3.9%);
   }
 }

@@ -61,10 +61,10 @@ export default function PropertyCardNew({ property, onView }: PropertyCardNewPro
       <div className="p-3 md:p-6">
         {/* Property name and location */}
         <div className="mb-3 md:mb-4">
-          <h3 className="text-sm md:text-xl font-bold text-white mb-1 md:mb-2 group-hover:text-primary-300 transition-colors line-clamp-2">
+          <h3 className="text-sm md:text-xl font-bold dynamic-text mb-1 md:mb-2 group-hover:text-primary-300 transition-colors line-clamp-2">
             {property.name}
           </h3>
-          <div className="flex items-center text-white/70">
+          <div className="flex items-center dynamic-text-light">
             <MapPin className="w-3 h-3 md:w-4 md:h-4 mr-1 text-primary-400 flex-shrink-0" />
             <span className="text-xs md:text-sm truncate">{property.location}</span>
           </div>
@@ -72,7 +72,7 @@ export default function PropertyCardNew({ property, onView }: PropertyCardNewPro
         
         {/* Facilities preview */}
         <div className="mb-3 md:mb-4">
-          <div className="flex items-center text-white/70 mb-1 md:mb-2">
+          <div className="flex items-center dynamic-text-light mb-1 md:mb-2">
             <Users className="w-3 h-3 md:w-4 md:h-4 mr-1 text-yellow-400" />
             <span className="text-xs md:text-sm">{property.capacity}</span>
           </div>
@@ -80,7 +80,7 @@ export default function PropertyCardNew({ property, onView }: PropertyCardNewPro
             {property.facilities.slice(0, 2).map((facility, index) => (
               <span 
                 key={index}
-                className="text-xs bg-white/10 text-white/80 px-2 py-1 rounded-lg backdrop-blur-sm"
+                className="text-xs bg-white/10 dynamic-text-muted px-2 py-1 rounded-lg backdrop-blur-sm"
               >
                 {facility}
               </span>
@@ -101,13 +101,13 @@ export default function PropertyCardNew({ property, onView }: PropertyCardNewPro
         {/* Pricing */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
           <div className="mb-2 md:mb-0">
-            <p className="text-lg md:text-2xl font-bold text-white">
+            <p className="text-lg md:text-2xl font-bold dynamic-text">
               {formatPrice(lowestRate)}
             </p>
-            <p className="text-xs md:text-sm text-white/60">per malam</p>
+            <p className="text-xs md:text-sm dynamic-text-light">per malam</p>
           </div>
           <div className="text-left md:text-right">
-            <p className="text-xs md:text-sm text-white/60 hidden md:block">Mulai dari</p>
+            <p className="text-xs md:text-sm dynamic-text-light hidden md:block">Mulai dari</p>
             <p className="text-xs text-primary-300 font-medium">
               {property.rates.length} pilihan harga
             </p>

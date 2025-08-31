@@ -44,9 +44,9 @@ export default function ContactSectionNew() {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="gradient-text">Hubungi</span>
-            <span className="text-white"> Kami</span>
+            <span className="dynamic-text"> Kami</span>
           </h2>
-          <p className="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl dynamic-text-light max-w-3xl mx-auto leading-relaxed">
             Siap membantu Anda merencanakan liburan yang tak terlupakan di Tawangmangu
           </p>
         </div>
@@ -63,9 +63,9 @@ export default function ContactSectionNew() {
                 <method.icon className="w-full h-full" />
               </div>
               
-              <h3 className="text-2xl font-bold text-white mb-2">{method.title}</h3>
-              <p className="text-white/60 mb-4">{method.description}</p>
-              <p className="text-lg font-semibold text-white mb-6">{method.value}</p>
+              <h3 className="text-2xl font-bold dynamic-text mb-2">{method.title}</h3>
+              <p className="dynamic-text-light mb-4">{method.description}</p>
+              <p className="text-lg font-semibold dynamic-text mb-6">{method.value}</p>
               
               {method.action && (
                 <Button 
@@ -96,7 +96,7 @@ export default function ContactSectionNew() {
               PESONA GLAMPING TAWANGMANGU
             </h3>
             
-            <p className="text-white/70 mb-8 max-w-2xl mx-auto">
+            <p className="dynamic-text-light mb-8 max-w-2xl mx-auto">
               Pengalaman glamping & villa terbaik di kaki Gunung Lawu dengan fasilitas modern dan pelayanan terbaik
             </p>
             
@@ -125,7 +125,7 @@ export default function ContactSectionNew() {
             </div>
             
             <div className="glass-card inline-block px-8 py-4 rounded-2xl">
-              <p className="text-white/60 text-center" data-testid="text-copyright">
+              <p className="dynamic-text-light text-center" data-testid="text-copyright">
                 Made with ❤️ for travelers seeking unforgettable mountain adventures
                 <br />
                 <span className="text-sm">&copy; {new Date().getFullYear()} PESONA GLAMPING TAWANGMANGU. All rights reserved.</span>
