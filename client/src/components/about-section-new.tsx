@@ -68,21 +68,6 @@ export default function AboutSectionNew() {
             </div>
           </div>
           
-          {/* Image */}
-          <div className="relative animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <div className="glass-card p-8 rounded-3xl">
-              <img 
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Pesona Glamping Tawangmangu" 
-                className="rounded-2xl w-full shadow-2xl"
-                data-testid="img-about"
-              />
-              
-              {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary-500/20 rounded-full blur-xl floating"></div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-yellow-400/20 rounded-full blur-2xl floating" style={{animationDelay: '3s'}}></div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
