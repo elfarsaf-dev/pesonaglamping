@@ -928,6 +928,31 @@ export const glampingData: Property[] = [
   "image": "https://github.com/elfarsaf-dev/lawuscape-/blob/main/Gambar/IMG_5836.jpeg?raw=true",
   "type": "glamping"
 },
+  {
+  "id": "omah-gunung-glamping",
+  "name": "Glamping Omah Gunung",
+  "location": "Tawangmangu",
+  "rates": [
+    { "label": "Minggu-Kamis", "price": 450000 },
+    { "label": "Jumat-Sabtu / Long Weekend / Public Holiday", "price": 650000 }
+  ],
+  "units": null,
+  "facilities": [
+    "Free WiFi",
+    "1 Queen bed (2-3 orang)",
+    "TV LED",
+    "Water heater",
+    "View Gunung Lawu",
+    "Linen bersih",
+    "Electric kettle",
+    "Free mineral water, coffee & tea (room)",
+    "Breakfast for 2"
+  ],
+  "capacity": "2-3 orang",
+  "notes": [],
+  "image": "https://raw.githubusercontent.com/elfarsaf-dev/Heu/main/uploads/IMG_6512.jpeg",
+  "type": "glamping"
+},
 {
   "id": "bhills-a",
   "name": "B.HILLS A",
